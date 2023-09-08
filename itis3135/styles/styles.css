@@ -9,3 +9,23 @@ h1,h2,h3{
     font-family: Impact;
     color:red;
 }
+
+table{
+    width: 100%;
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: black;
+    align-self: center;
+}
+
+th{
+    background-color: blue;
+    color: white;
+    border: 1px solid;
+    border-color: black;
+}
+td{
+    text-align: center;
+    border: 1px solid;
+    border-color: black;
+}
