@@ -29,3 +29,21 @@ td{
     border: 1px solid;
     border-color: black;
 }
+
+input[type=text], input[type=email], input[type=number]{
+    background-color: pink;
+    color: black;
+}
+
+select{
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: pink;
+    color: purple;
+
+}
+input[type = submit], input[type=reset], input[type=button]{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
