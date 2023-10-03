@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>   
+        <meta charset="UTF-8"> 
+        <link href="styles/styles.css" rel="stylesheet">
+        <title>Sean Do Scrumptious Dog | ITIS 3135 | FirstScripts</title>         
+    </head>
+    <body onload="promptUser()">
+        <header>
+            <h1>
+                Sean Do Scrumptious Dog | ITIS 3135 
+            </h1>
+            <nav>
+                <a href="./">Homepage</a>
+                ||
+                <a href="introduction.html">Introduction</a>
+                ||
+                <a href="contract.html">Contract</a>
+                ||
+                <a href="table.html">Tables</a>
+                ||
+                <a href="/">Back to Main Site</a>
+            </nav>
+        </header>
+        <main onload="getTodaysDate()"> 
+            <h2>First Javascript</h2>
+            <h3 id="greeting">Welcome</h3>
+            <h4>The current time and date is <span id="date-time"></span></h4>
+            <h5 id="greetMsg">Whats good cuzzo</h5>
+            <input type="button" onclick="displayToday()" value="Display Today's Date">
+            <h5 id="day_of_week"></h5>
+            <input type="button" onclick="squareNum()" value="Number Squared">
+            <h5 id="number_squared"></h5>
+            <input type="button" onclick="randomName()" value="Goofy Name Generator">
+            <h5 id="random_name"></h5>
+            <input type="button" onclick="randInsult()" value="Insult Generator">
+            <h5 id="insult"></h5>
+            <input type="button" onclick="randFact()" value="Random fact of the Day">
+            <h5 id="fact"></h5>
+        </main>
+        <footer>
+            <input type="button" onclick="scriptTest()" value="Testing">
+            <script src="scripts/defaultscripts.js"></script>
+            <br />
+            <br/>
+            <nav>
+                <a href="https://webpages.charlotte.edu/sdo4/">Charlotte.edu</a>
+                ||
+                <a href="https://github.com/SeanDo1">Github</a>
+                ||
+                <a href="https://seando1.github.io/">Github.io</a>
+                ||
+                <a href="https://github.com/SeanDo1/SeanDo1.github.io/tree/main/itis3135">ITIS 3135 Github Pages </a>
+                ||
+                <a href="https://www.freecodecamp.org/fcc907253a7-89f0-45c6-9107-1f8b8d17d622">freeCodeCamp</a>
+                ||
+                <a href="https://www.codecademy.com/profiles/chip9654472296">Codecademy</a>
+                ||
+                <a href="https://www.linkedin.com/in/sean-do-441a39149/">LinkedIn</a>
+                
+            </nav>   
+            <br />
+            <br/>
+            <p>Page Built by <a href="do-enterprise.com/">Do enterprises</a>&copy; 2023 </p> 
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
+            </p>
+        </footer>
+    </body>
+</html>
