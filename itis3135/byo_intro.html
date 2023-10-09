@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYO Intro</title>
+    <link href="styles/styles.css" rel="stylesheet" > 
+</head>
+<body>
+    <header>
+        <h1>Sean Do || ITIS3135</h1>
+        <nav>
+            <a href="./">Homepage</a>
+            ||
+            <a href="introduction.html">Introduction</a>
+            ||
+            <a href="contract.html">Contract</a>
+            ||
+            <a href="table.html">Tables</a>
+            ||
+            <a href="form.html">Form</a>
+            ||
+            <a href="stuff/CRA !PPY.html">Crappy Site</a>
+            ||
+            <a href="firstscripts.html">FirstScripts</a>
+            ||
+            <a href="/">Back to Main Site</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>BYO Intro</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+        
+        <form id="introForm" action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" name="mascot" required>
+
+            <label for="image">Image (PNG or JPG):</label>
+            <input type="file" id="image" name="image" accept=".png, .jpg" required>
+
+            <label for="imageCaption">Image Caption:</label>
+            <input type="text" id="imageCaption" name="imageCaption" required>
+
+            <label for="personalBackground">Personal Background:</label>
+            <textarea id="personalBackground" name="personalBackground" rows="4" required></textarea>
+
+            <label for="professionalBackground">Professional Background:</label>
+            <textarea id="professionalBackground" name="professionalBackground" rows="4" required></textarea>
+
+            <label for="academicBackground">Academic Background:</label>
+            <textarea id="academicBackground" name="academicBackground" rows="4" required></textarea>
+
+            <label for="webDevelopmentBackground">Background in Web Development:</label>
+            <textarea id="webDevelopmentBackground" name="webDevelopmentBackground" rows="4" required></textarea>
+
+            <label for="computerPlatform">Primary Computer Platform:</label>
+            <input type="text" id="computerPlatform" name="computerPlatform" required>
+
+            <label>Courses Currently Taking:</label>
+            <div id="coursesContainer">
+            </div>
+            <button type="button" id="addCourse">Add Course</button>
+
+            <label for="funnyThing">Funny Thing?</label>
+            <textarea id="funnyThing" name="funnyThing" rows="4"></textarea>
+
+            <label for="additionalInfo">Anything else?</label>
+            <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+
+            <label>
+                <input type="checkbox" id="agreement" required>
+                I understand that what is on this page is not password protected, and I will not put anything here that I don’t want publicly available.
+            </label>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+        <div id="submittedContent">
+        </div>
+
+        <a href="#" id="resetLink">Reset Form</a>
+    </main>
+
+    <script src="scripts/survey.js"></script>
+    <footer>
+        <input type="button" onclick="scriptTest()" value="Testing">
+        <script src="scripts/defaultscripts.js"></script>
+        <br />
+        <br/>
+        <nav>
+            <a href="https://webpages.charlotte.edu/sdo4/">Charlotte.edu</a>
+            ||
+            <a href="https://github.com/SeanDo1">Github</a>
+            ||
+            <a href="https://seando1.github.io/">Github.io</a>
+            ||
+            <a href="https://github.com/SeanDo1/SeanDo1.github.io/tree/main/itis3135">ITIS 3135 Github Pages </a>
+            ||
+            <a href="https://www.freecodecamp.org/fcc907253a7-89f0-45c6-9107-1f8b8d17d622">freeCodeCamp</a>
+            ||
+            <a href="https://www.codecademy.com/profiles/chip9654472296">Codecademy</a>
+            ||
+            <a href="https://www.linkedin.com/in/sean-do-441a39149/">LinkedIn</a>
+            
+        </nav>   
+        <br />
+        <br/>
+        <p>Page Built by <a href="do-enterprise.com/">Do enterprises</a>&copy; 2023 </p> 
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+        </p>
+    </footer>
+</body>
+</html>
