@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-
-<html lang="en">
-    <head>
+<html>
+<head>
+    head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <Title>Sean Do || ITIS 3135 Homepage</Title>
-    <link href="styles/styles.css" rel="stylesheet">
-    
+        <title>Sean Do || Calculator</title>
+        <link rel="stylesheet" href="styles/calculator.css">
 </head>
-
 <body>
     
     <header>
@@ -32,17 +30,37 @@
             ||
             <a href="calculator_try.html">Calculator Attempt</a>
             ||
-            <a href="calculator.html">Calculator</a>
-            ||
             <a href="CRAP.html">CRAP Assignment</a>
             ||
             <a href="/">Back to Main Site</a>
         </nav>
 </header>
-<main>
-    <h2>Sean Do || ITIS 3135 Homepage</h2>
-    <p> This is all the content for my ITIS 3135</p>
+ <main>
+    <div class="calculator">
+        <div class="calculator__display">0</div>
+      
+            <div class="calculator__keys">
+              <button class="key--operator" data-action="add">+</button>
+              <button class="key--operator" data-action="subtract">-</button>
+              <button class="key--operator" data-action="multiply">&times;</button>
+              <button class="key--operator" data-action="divide">÷</button>
+              <button>7</button>
+              <button>8</button>
+              <button>9</button>
+              <button>4</button>
+              <button>5</button>
+              <button>6</button>
+              <button>1</button>
+              <button>2</button>
+              <button>3</button>
+              <button>0</button>
+              <button data-action="decimal">.</button>
+              <button data-action="clear">AC</button>
+              <button class="key--equal" data-action="calculate">=</button>
+            </div>
+        </div>
 </main>
+    <script src="scripts/calculator.js"></script>
 </body>
 
 <footer>
@@ -70,6 +88,4 @@
                 <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
             </a>
 </footer>
-    
-    
-    </html>
+</html>
