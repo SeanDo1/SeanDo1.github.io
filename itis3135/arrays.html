@@ -36,14 +36,39 @@
             ||
             <a href="CRAP.html">CRAP Assignment</a>
             ||
-            <a href="arrays.html">Array Assignment</a>
-            ||
             <a href="/">Back to Main Site</a>
         </nav>
 </header>
 <main>
-    <h2>Sean Do || ITIS 3135 Homepage</h2>
-    <p> This is all the content for my ITIS 3135</p>
+    <h1>Employee Salaries</h1>
+    <div>
+        <label for="name">Select Employee:</label>
+        <select id="name">
+            <option value="Sean">Sean</option>
+            <option value="MyTien">MyTien</option>
+            <option value="Bob">Bob</option>
+        </select>
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary">
+        <button id="add" onclick="addSalary()">Add Salary</button>
+    </div>
+    <div>
+        <table id="results_table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div id="results">
+        <h2>Results</h2>
+        <p>Average Salary: <span id="average">0</span></p>
+        <p>Highest Salary: <span id="highest">0</span></p>
+    </div>
+    <script src="arrays.js"></script>
 </main>
 </body>
 
