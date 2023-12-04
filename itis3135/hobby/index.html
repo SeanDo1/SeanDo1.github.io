@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Hobby Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: blue;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: blue;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: green;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        section {
+            display: none;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #555;
+            margin-top: 20px;
+        }
+
+        h3 {
+            color: #777;
+            margin-top: 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        figcaption {
+            color: #888;
+            font-style: italic;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FISHING</h1>
+    </header>
+
+    <nav>
+        <a href="#what" onclick="showSection('what')">Home</a>
+        <a href="#who" onclick="showSection('who')">About Me</a>
+        <a href="#when" onclick="showSection('when')">Best Times</a>
+        <a href="#where" onclick="showSection('where')">Locations</a>
+        <a href="#how" onclick="showSection('how')">How</a>
+        <a href="#why" onclick="showSection('why')">Why</a>
+    </nav>
+
+    <main>
+        <section id="what">
+            <h2>Home</h2>
+            <p>Welcome to my hobby website! This is the home page and its about FISHING</p>
+            <img src="funny.jpg" alt="Home Image">
+        </section>
+
+        <section id="who">
+            <h2>About Me</h2>
+            
+            <p>I am passionate about fishing</p>
+            <h3>My Experience</h3>
+            <p>I have been fishing for basically my whole life, i be doing crazy stuff like jumping into the water and bite the fish myself</p>
+            <img src="bear.png" alt="About Me Image">
+        </section>
+
+        <section id="when">
+            <h2>Best Times</h2>
+            <h3>Seasons</h3>
+            <p>The best times for fishing is depending on the goal fish you are trying to catch because different seasons have different fish biting</p>
+            <h3>Schedule</h3>
+            <p>Here is a schedule for my upcoming fishing events</p>
+            <ul>
+                <li>
+                    3/15/1948: Saltwater fishing with John Cena
+                </li>
+                <li>
+                    3/15/1603: Freshwater fishing with George Washington
+                </li>
+                <li>
+                    3/15/2517: Jug fishing with Barrack Obama
+                </li>
+            </ul>
+            <img src="fish1.webp" alt="Best Times Image">
+        </section>
+
+        <section id="where">
+            <h2>Locations</h2>
+            <h3>Favorite Spots</h3>
+            <p>Discover my favorite locations for fishing</p>
+            <h3>Local Spots</h3>
+            <ul>
+                <li>
+                    Normandy Beach 
+                </li>
+                <li>
+                    Jetty in Atlantic City
+                </li>
+                <li>
+                    The muddy puddle in my backyard
+                </li>
+            </ul>
+            <img src="bitten.webp" alt="Locations Image">
+        </section>
+
+        <section id="how">
+            <h2>How</h2>
+            <h3>Getting Started</h3>
+            <p>If you're interested in trying out this hobby, here's how you can get started!</p>
+            <h3>Essential Gear</h3>
+            <ul>
+                <li>
+                    Fishing Rod
+                </li>
+                <li>
+                    Bait(Fake or real)
+                </li>
+                <li>
+                    Sun Screen
+                </li>
+                <li>
+                    A snack and a beer(when you get hungry)
+                </li>
+                <li>
+                    Fishing license
+                </li>
+            </ul>
+            <img src="fishing.jpg" alt="How Image">
+        </section>
+
+        <section id="why">
+            <h2>Why</h2>
+            <h3>Passion</h3>
+            <p>Explore the reasons why I am so passionate about this hobby</p>
+            <h3>Benefits</h3>
+            <ul>
+                <li>
+                    Free Food if you catch a fish
+                </li>
+                <li>
+                    Time to be alone and relax
+                </li>
+                <li>
+                    exploring new places
+                </li>
+                <li>
+                    Learn about different types of fish
+                </li>
+            </ul>
+            <img src="men.webp" alt="Why Image">
+        </section>
+    </main>
+
+    <footer>
+        <p>Page Built by <a href="do-enterprise.com/">Do enterprises</a>&copy; 2023 </p> 
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+        </p>
+
+        <script>
+            function showSection(sectionId) {
+                // Hide all sections
+                document.querySelectorAll('section').forEach(section => section.classList.remove('active'));
+    
+                // Show the selected section
+                document.getElementById(sectionId).classList.add('active');
+            }
+    
+            // Show the home section by default
+            showSection('home');
+        </script>

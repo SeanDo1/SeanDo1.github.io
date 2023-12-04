@@ -1,5 +1,5 @@
 
 
 document.getElementById('showAlert').addEventListener('click', function() {
-    alert('Hello, Very Nice to meet you');
+    alert('Give us your money and Social Security Number');
 });
